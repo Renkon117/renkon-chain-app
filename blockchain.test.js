@@ -42,15 +42,12 @@ describe('Blockchain', () => {
 
             describe('and a lastHash reference has changed', () => {
                 it('returns false', () => {
-
-                    blockchain.chian[2].lastHash = 'block-lastHash';
-
+                    blockchain.chain[2].lastHash = 'broken-lastHash';
                     expect(Blockchain.isValidChain(blockchain.chain)).toBe(false);
                 });
             });
             describe('and the chain contains a block with an invalid firld', () => {
                 it('return false', () => {
-
                     blockchain.chain[2].data = 'some-bad-and-evil-data';
                     expect(Blockchain.isValidChain(blockchain.chain)).toBe(false);
                 });
