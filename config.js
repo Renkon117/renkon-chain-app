@@ -6,7 +6,7 @@ const GENESIS_DATA = {
     lastHash: '-----',
     hash: 'hash-one',
     difficulty: INITIAL_DIFFICULTY,
-    nounce: 0,
+    nonce: 0,
     data: []
 };
 
