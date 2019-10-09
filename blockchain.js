@@ -45,7 +45,6 @@ class Blockchain {
 
         if (!Blockchain.isValidChain(chain)) {
             console.error('The incoming chain must be valid');
-
             return;
         }
         console.log('replacing chain with', chain);
